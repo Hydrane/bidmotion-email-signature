@@ -165,9 +165,6 @@ import { FormsModule }   from '@angular/forms';
                       </tr>
                       <tr>
                           <td colspan="3">
-                              <a href="https://goo.gl/forms/z521EGAfbwvgE6Cv2" target="_blank" style="color: rgb(88, 203, 181); text-decoration: none; display: inline;">
-                                  <img src="https://hd-misc.s3.amazonaws.com/assets/signatures/dmexco_banner_450x100_BidMotion-1.jpg" alt="Bidmotion at Dmexco" border="0" height="100" width="450">
-                              </a>
                           </td>
                       </tr>
                   </tbody>
