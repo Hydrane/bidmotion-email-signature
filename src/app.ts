@@ -70,6 +70,41 @@ import { FormsModule }   from '@angular/forms';
                 </div>
               </div>
             </div>
+            
+            <div class="form-group">
+              <label for="bannerEnabled" class="col-xs-2 control-label">Show Banner</label>
+              <div class="col-xs-6 has-feedback" [class.has-error]="!bannerEnabled.valid && !bannerEnabled.pristine" [class.has-success]="bannerEnabled.valid && !bannerEnabled.pristine">
+                <input type="checkbox" id="bannerEnabled" name="bannerEnabled" #bannerEnabled="ngModel" [(ngModel)]="signature.bannerEnabled" />
+              </div>
+            </div>
+            
+            <div class="form-group" *ngIf="signature.bannerEnabled">
+              <label for="bannerURL" class="col-xs-2 control-label">Banner URL</label>
+              <div class="col-xs-6 has-feedback" [class.has-error]="!bannerURL.valid && !bannerURL.pristine" [class.has-success]="bannerURL.valid && !bannerURL.pristine">
+                <input type="text" id="bannerURL" name="bannerURL" #bannerURL="ngModel" [(ngModel)]="signature.bannerURL" required pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}.*" class="form-control" placeholder="Banner image URL..." />
+                <span *ngIf="bannerURL.valid && !bannerURL.pristine" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                <span *ngIf="bannerURL.valid && !bannerURL.pristine" id="bannerURL" class="sr-only">(success)</span>
+                <div [hidden]="bannerURL.valid || bannerURL.pristine" class="alert alert-danger" role="alert">
+                  Banner URL is invalid.
+                </div>
+                <span class="help-block">
+                  Use Image of Width 400px, Height 100px
+                </span>
+              </div>
+            </div>
+            
+            <div class="form-group" *ngIf="signature.bannerEnabled">
+              <label for="bannerLink" class="col-xs-2 control-label">Banner Link</label>
+              <div class="col-xs-6 has-feedback" [class.has-error]="!bannerLink.valid && !bannerLink.pristine" [class.has-success]="bannerLink.valid && !bannerLink.pristine">
+                <input type="text" id="bannerLink" name="bannerLink" #bannerLink="ngModel" [(ngModel)]="signature.bannerLink" required pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}.*" class="form-control" placeholder="Banner click Link..." />
+                <span *ngIf="bannerLink.valid && !bannerLink.pristine" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                <span *ngIf="bannerLink.valid && !bannerLink.pristine" id="bannerLink" class="sr-only">(success)</span>
+                <div [hidden]="bannerLink.valid || bannerLink.pristine" class="alert alert-danger" role="alert">
+                  Banner Link is invalid.
+                </div>
+              </div>
+            </div>
+            
             <div class="form-group">
               <label for="skype" class="col-xs-2 control-label">Skype Handle</label>
               <div class="col-xs-6 has-feedback" [class.has-error]="!skype.valid && !skype.pristine" [class.has-success]="skype.valid && !skype.pristine">
@@ -165,6 +200,10 @@ import { FormsModule }   from '@angular/forms';
                       </tr>
                       <tr>
                           <td colspan="3">
+                            <a [href]="signature.bannerLink" target="_blank" style="color: rgb(88, 203, 181); text-decoration: none; display: inline;"
+                                *ngIf="signature.bannerEnabled">
+                              <img [src]="signature.bannerURL" alt="Bidmotion at Mobile World Congress" border="0" height="100" width="450">
+                            </a>
                           </td>
                       </tr>
                   </tbody>
@@ -192,6 +231,9 @@ export class App implements OnInit {
     phone: '',
     skype: '',
     skypeURL: '',
+    bannerEnabled: false,
+    bannerURL: '',
+    bannerLink: ''
   };
 
   constructor() { }
