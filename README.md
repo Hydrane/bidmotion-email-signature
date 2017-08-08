@@ -1,3 +1,6 @@
+# Important!!!
+JS files are served from root folder, neither src nor dist
+
 # BmEmailSignature
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
