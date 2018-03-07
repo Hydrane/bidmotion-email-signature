@@ -124,6 +124,12 @@
           </div>
         </div>
         <div class="form-group">
+          <label for="bannerEnabled" class="col-xs-2 control-label">Homa Games</label>
+          <div class="col-xs-6 has-feedback">
+            <input type="checkbox" name="homegames" [(ngModel)]="signature.isHomaGames" />
+          </div>
+        </div>
+        <div class="form-group">
           <div class="col-xs-offset-2 col-xs-10">
             <button type="button" class="btn btn-default" (click)="reset()">Reset Signature</button>
           </div>
@@ -143,17 +149,17 @@
               <td align="left" valign="top" width="90">
                 <p style="margin-bottom: 10px; margin-right: 10px; font-family: Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px;">
                   <a style="text-decoration:none" href="http://www.bidmotion.com?signature={{signature.email}}" target="_blank">
-                    <img src="https://hd-misc.s3.amazonaws.com/assets/misc/logo.png" alt="Bidmotion" border="0" style="border-radius: 50%;" height="80" width="80">
+                    <img [src]="config.logo" alt="Bidmotion" border="0" style="border-radius: 50%;" height="80" width="80">
                   </a>
                 </p>
                 <p style="font-size: 0px; line-height: 0; font-family: Helvetica, Arial, sans-serif;">
                   <span style="white-space:nowrap;"><img src="https://hd-misc.s3.amazonaws.com/assets/misc/spacer.gif" width="13"></span>
-                  <a style="text-decoration: none; display: inline;" href="https://twitter.com/bidmotion" target="_blank"><img width="16" style="margin-bottom:2px; border:none; display:inline;" height="16" data-filename="twitter.png" src="https://hd-misc.s3.amazonaws.com/assets/icons/twitter.png" alt="Twitter"></a><span style="white-space:nowrap;"><img src="https://hd-misc.s3.amazonaws.com/assets/misc/spacer.gif" width="2"></span>
-                  <a style="text-decoration: none; display: inline;" href="https://www.linkedin.com/company/bidmotion" target="_blank"><img width="16" style="margin-bottom:2px; border:none; display:inline;" height="16" data-filename="linkedin.png" src="https://hd-misc.s3.amazonaws.com/assets/icons/linkedin.png" alt="LinkedIn"></a><span style="white-space:nowrap;"><img src="https://hd-misc.s3.amazonaws.com/assets/misc/spacer.gif" width="2"></span>
-                  <a style="text-decoration: none; display: inline;" href="https://www.facebook.com/bidmotion" target="_blank"><img width="16" style="margin-bottom:2px; border:none; display:inline;" height="16" data-filename="facebook.png" src="https://hd-misc.s3.amazonaws.com/assets/icons/facebook.png" alt="Facebook"></a><span style="white-space:nowrap;"><img src="https://hd-misc.s3.amazonaws.com/assets/misc/spacer.gif" width="2"></span>
+                  <a style="text-decoration: none; display: inline;" href="{{ config.twitter }}" target="_blank"><img width="16" style="margin-bottom:2px; border:none; display:inline;" height="16" data-filename="twitter.png" src="https://hd-misc.s3.amazonaws.com/assets/icons/twitter.png" alt="Twitter"></a><span style="white-space:nowrap;"><img src="https://hd-misc.s3.amazonaws.com/assets/misc/spacer.gif" width="2"></span>
+                  <a style="text-decoration: none; display: inline;" href="{{ config.linkedin }}" target="_blank"><img width="16" style="margin-bottom:2px; border:none; display:inline;" height="16" data-filename="linkedin.png" src="https://hd-misc.s3.amazonaws.com/assets/icons/linkedin.png" alt="LinkedIn"></a><span style="white-space:nowrap;"><img src="https://hd-misc.s3.amazonaws.com/assets/misc/spacer.gif" width="2"></span>
+                  <a style="text-decoration: none; display: inline;" href="{{ config.facebook }}" target="_blank"><img width="16" style="margin-bottom:2px; border:none; display:inline;" height="16" data-filename="facebook.png" src="https://hd-misc.s3.amazonaws.com/assets/icons/facebook.png" alt="Facebook"></a><span style="white-space:nowrap;"><img src="https://hd-misc.s3.amazonaws.com/assets/misc/spacer.gif" width="2"></span>
                 </p>
               </td>
-              <td align="left" valign="top" nowrap="nowrap" width="16" style="border-left-width: 2px; border-left-style: solid; border-left-color: rgb(88, 203, 181);">
+              <td align="left" valign="top" nowrap="nowrap" width="16" style="border-left-width: 2px; border-left-style: solid;" [ngStyle]="{ 'border-left-color': config.color }">
                 <img src="https://hd-misc.s3.amazonaws.com/assets/misc/spacer.gif" width="10">
               </td>
               <td align="left" valign="top" nowrap="nowrap" width="354" style="margin-bottom: 0;">
@@ -165,20 +171,20 @@
                     <span style="display: inline;"><br></span>
                     <span style="display: inline;"><br></span>
                     <span style="display: inline;">Email: </span>
-                    <a href="mailto:{{signature.email}}" style="color: rgb(88, 203, 181); text-decoration: none; display: inline;">{{signature.email}}</a>
+                    <a href="mailto:{{signature.email}}" style="text-decoration: none; display: inline;" [ngStyle]="{ color: config.color }">{{signature.email}}</a>
                     <span style="display: inline;"><br></span>
                     <span style="display: inline;">Skype: </span>
-                    <a href="{{signature.skypeURL}}" target="_blank" style="color: rgb(88, 203, 181); text-decoration: none; display: inline;">{{signature.skype}}</a>
+                    <a href="{{signature.skypeURL}}" target="_blank" style="text-decoration: none; display: inline;" [ngStyle]="{ color: config.color }">{{signature.skype}}</a>
                     <span style="display: inline;"><br></span>
-                    <span style="display: inline;">Phone: </span><span style="color: rgb(33, 33, 33); display: inline;">{{signature.phone}}</span>
+                    <span style="display: inline;">Phone: </span><span style="display: inline;" [ngStyle]="{ color: config.color }">{{signature.phone}}</span>
                   </p>
                   <p style="font-family: Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px; margin-bottom: 10px;">
-                    <a href="http://www.bidmotion.com/?signature={{signature.email}}" target="_blank" style="font-weight: bold; font-size: 12px; color: rgb(33, 33, 33); text-decoration: none; display: inline;">BidMotion</a>
+                    <a href="http://www.bidmotion.com/?signature={{signature.email}}" target="_blank" style="font-weight: bold; font-size: 12px; color: rgb(33, 33, 33); text-decoration: none; display: inline;">{{ config.companyName }}</a>
                     <span style="display: inline;"><br></span>
-                    <span></span> <span style="color: rgb(33, 33, 33); display: inline;">76, rue Faubourg Saint-Denis 75010 Paris</span>
+                    <span></span> <span style="color: rgb(33, 33, 33); display: inline;">{{ config.address }}</span>
                     <span style="display: block;"></span>
                     <span style="color: rgb(33, 33, 33); display: inline;">
-                                        <a style="color: rgb(88, 203, 181); text-decoration: none; display: inline;" href="http://www.bidmotion.com?signature={{signature.email}}" target="_blank">
+                                        <a style="text-decoration: none; display: inline;" [ngStyle]="{ color: config.color }" href="http://www.bidmotion.com?signature={{signature.email}}" target="_blank">
                                           http://www.bidmotion.com
                                         </a>
                                       </span>
@@ -192,7 +198,7 @@
             </tr>
             <tr>
               <td colspan="3">
-                <a [href]="signature.bannerLink" target="_blank" style="color: rgb(88, 203, 181); text-decoration: none; display: inline;"
+                <a [href]="signature.bannerLink" target="_blank" [ngStyle]="{ color: config.color }" style="text-decoration: none; display: inline;"
                    *ngIf="signature.bannerEnabled">
                   <img [src]="signature.bannerURL" alt="Bidmotion at Mobile World Congress" border="0" height="100" width="450">
                 </a>
@@ -203,7 +209,6 @@
         </div>
       </form>
       <hr />
-      Made with <i class="fa fa-heart"></i> by <a href="https://twitter.com/urbanpierre" target="_blank">Pierre Urban</a>.
     </div>
   </div>
 </div>
