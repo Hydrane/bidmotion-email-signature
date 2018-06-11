@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
     color: 'rgb(88, 203, 181)',
     address: '76, rue Faubourg Saint-Denis 75010 Paris',
     companyName: 'BidMotion',
+    companyWebsite: 'http://www.bidmotion.com',
     logo: 'https://hd-misc.s3.amazonaws.com/assets/misc/logo.png',
     logoLink: 'http://www.bidmotion.com'
   };
@@ -40,6 +41,7 @@ export class AppComponent implements OnInit {
     color: '#249e7f',
     address: '76, rue Faubourg Saint-Denis 75010 Paris',
     companyName: 'Homa Games',
+    companyWebsite: 'http://homagames.com',
     logo: 'http://homagames.com/wp-content/uploads/sites/8/2018/02/Redone-logo-1.png',
     logoLink: 'http://homagames.com/'
   };

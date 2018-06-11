@@ -179,13 +179,13 @@
                     <span style="display: inline;">Phone: </span><span style="display: inline;" [ngStyle]="{ color: config.color }">{{signature.phone}}</span>
                   </p>
                   <p style="font-family: Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px; margin-bottom: 10px;">
-                    <a href="http://www.bidmotion.com/?signature={{signature.email}}" target="_blank" style="font-weight: bold; font-size: 12px; color: rgb(33, 33, 33); text-decoration: none; display: inline;">{{ config.companyName }}</a>
+                    <a href="{{ config.companyWebsite }}/?signature={{signature.email}}" target="_blank" style="font-weight: bold; font-size: 12px; color: rgb(33, 33, 33); text-decoration: none; display: inline;">{{ config.companyName }}</a>
                     <span style="display: inline;"><br></span>
                     <span></span> <span style="color: rgb(33, 33, 33); display: inline;">{{ config.address }}</span>
                     <span style="display: block;"></span>
                     <span style="color: rgb(33, 33, 33); display: inline;">
-                                        <a style="text-decoration: none; display: inline;" [ngStyle]="{ color: config.color }" href="http://www.bidmotion.com?signature={{signature.email}}" target="_blank">
-                                          http://www.bidmotion.com
+                                        <a style="text-decoration: none; display: inline;" [ngStyle]="{ color: config.color }" href="{{ config.companyWebsite }}?signature={{signature.email}}" target="_blank">
+                                          {{ config.companyWebsite }}
                                         </a>
                                       </span>
                     <span style="display: inline;"><br></span>
