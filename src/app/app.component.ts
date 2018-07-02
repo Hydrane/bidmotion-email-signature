@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
   };
 
   public homaGamesConfig = {
-    linkedin: 'https://www.linkedin.com/company/bidmotion',
+    linkedin: 'https://www.linkedin.com/company/homa-games',
     twitter: 'https://www.instagram.com/homagames/',
     facebook: 'https://www.facebook.com/homagames/',
     color: '#249e7f',
