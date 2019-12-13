@@ -31,6 +31,9 @@ export class AppComponent implements OnInit {
     companyName: 'BidMotion',
     companyWebsite: 'http://www.bidmotion.com',
     logo: 'https://hd-misc.s3.amazonaws.com/assets/misc/logo.png',
+    logoOptions: [
+      { name: 'Logo 1', value: 'https://hd-misc.s3.amazonaws.com/assets/misc/logo.png' },
+    ],
     logoLink: 'http://www.bidmotion.com'
   };
 
@@ -43,6 +46,10 @@ export class AppComponent implements OnInit {
     companyName: 'Homa Games',
     companyWebsite: 'http://homagames.com',
     logo: 'http://homagames.com/wp-content/uploads/sites/8/2018/02/Redone-logo-1.png',
+    logoOptions: [
+      { name: 'Logo 1', value: 'http://homagames.com/wp-content/uploads/sites/8/2018/02/Redone-logo-1.png' },
+      { name: 'Logo 2', value: 'https://hd-misc.s3.amazonaws.com/assets/misc/logo.png' },
+    ],
     logoLink: 'http://homagames.com/'
   };
 
