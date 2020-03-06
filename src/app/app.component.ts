@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -16,28 +17,9 @@ export class AppComponent implements OnInit {
     phone: '',
     skype: '',
     skypeURL: '',
-    bannerEnabled: false,
-    bannerURL: '',
-    bannerLink: '',
-    isHomaGames: false
   };
 
-  public bidmotionConfig = {
-    linkedin: 'https://www.linkedin.com/company/bidmotion',
-    twitter: 'https://twitter.com/bidmotion',
-    facebook: 'https://www.facebook.com/bidmotion',
-    color: 'rgb(88, 203, 181)',
-    address: '76, rue Faubourg Saint-Denis 75010 Paris',
-    companyName: 'BidMotion',
-    companyWebsite: 'http://www.bidmotion.com',
-    logo: 'https://hd-misc.s3.amazonaws.com/assets/misc/logo.png',
-    logoOptions: [
-      { name: 'Logo 1', value: 'https://hd-misc.s3.amazonaws.com/assets/misc/logo.png' },
-    ],
-    logoLink: 'http://www.bidmotion.com'
-  };
-
-  public homaGamesConfig = {
+  public config = {
     linkedin: 'https://www.linkedin.com/company/homa-games',
     twitter: 'https://www.instagram.com/homagames/',
     facebook: 'https://www.facebook.com/homagames/',
@@ -45,12 +27,11 @@ export class AppComponent implements OnInit {
     address: '76, rue Faubourg Saint-Denis 75010 Paris',
     companyName: 'Homa Games',
     companyWebsite: 'http://homagames.com',
-    logo: 'http://homagames.com/wp-content/uploads/sites/8/2018/02/Redone-logo-1.png',
-    logoOptions: [
-      { name: 'Logo 1', value: 'http://homagames.com/wp-content/uploads/sites/8/2018/02/Redone-logo-1.png' },
-      { name: 'Logo 2', value: 'https://hd-misc.s3.amazonaws.com/assets/misc/logo.png' },
-    ],
-    logoLink: 'http://homagames.com/'
+    logo: '/assets/HOMA_GAMES_icon_1024.png',
+    logoLink: 'http://homagames.com/',
+    bannerEnabled: false,
+    bannerURL: '',
+    bannerLink: '',
   };
 
   constructor() { }
@@ -60,14 +41,14 @@ export class AppComponent implements OnInit {
     const bannerLink = this.getParameterByName('bannerLink', '');
     const bannerURL = this.getParameterByName('bannerURL', '');
     if (bannerURL) {
-      this.signature['bannerEnabled'] = true;
-      this.signature['bannerLink'] = bannerLink;
-      this.signature['bannerURL'] = bannerURL;
+      this.config['bannerEnabled'] = true;
+      this.config['bannerLink'] = bannerLink;
+      this.config['bannerURL'] = bannerURL;
     }
-  }
-
-  get config() {
-    return this.signature['isHomaGames'] ? this.homaGamesConfig : this.bidmotionConfig;
+    const logoURL = this.getParameterByName('logoURL', '');
+    if (logoURL) {
+      this.config.logo = logoURL;
+    }
   }
 
   public reset():void {
@@ -87,4 +68,5 @@ export class AppComponent implements OnInit {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
+
 }
