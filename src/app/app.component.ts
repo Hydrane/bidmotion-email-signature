@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
     linkedin: 'https://www.linkedin.com/company/homa-games',
     twitter: 'https://www.instagram.com/homagames/',
     facebook: 'https://www.facebook.com/homagames/',
-    color: '#249e7f',
+    color: '#47D7AC',
     address: '76, rue Faubourg Saint-Denis 75010 Paris',
     companyName: 'Homa Games',
     companyWebsite: 'http://homagames.com',
