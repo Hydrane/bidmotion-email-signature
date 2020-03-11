@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
     address: '76, rue Faubourg Saint-Denis 75010 Paris',
     companyName: 'Homa Games',
     companyWebsite: 'http://homagames.com',
-    logo: '/assets/HOMA_GAMES_icon_1024.png',
+    logo: 'HOMA_GAMES_icon_1024.png',
     logoLink: 'http://homagames.com/',
     bannerEnabled: false,
     bannerURL: '',
