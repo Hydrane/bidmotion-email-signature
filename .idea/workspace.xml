@@ -2,6 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50dd135c-7e61-4ec0-b775-4c4163eafe0c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/inline.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/inline.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/polyfills.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/polyfills.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/styles.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/styles.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor.bundle.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -152,7 +152,7 @@
             <tbody>
             <tr>
               <td align="left" valign="top" width="90">
-                <p style="margin-top: 24px; margin-bottom: 10px; margin-right: 10px; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px;">
+                <p style="margin-top: 17px; margin-bottom: 10px; margin-right: 10px; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px;">
                   <img [src]="config.logo" alt="Homagames" border="0" style="border-radius: 5%;" height="80" width="80">
                 </p>
                 <!--<p style="font-size: 0px; line-height: 0; font-family: Helvetica, Arial, sans-serif;">-->
@@ -165,9 +165,9 @@
               <td align="left" valign="top" nowrap="nowrap" width="16" style="border-left-width: 2px; border-left-style: solid;" [ngStyle]="{ 'border-left-color': config.color }">
               </td>
               <td align="left" valign="top" nowrap="nowrap" width="354" style="margin-bottom: 0;">
-                <div style="">
+                <div style="margin: 2px 0 2px 0">
                   <p style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px; color: rgb(33, 33, 33); margin-bottom: 10px;">
-                    <span style="font-weight: bold; font-size: 12px; color: rgb(33, 33, 33); display: inline;">{{signature.firstName}} {{signature.lastName}}</span>
+                    <span style="font-weight: bold; font-size: 12px; color: rgb(33, 33, 33); display: inline; margin-top: 2px;">{{signature.firstName}} {{signature.lastName}}</span>
                     <span style="display: inline;"><br></span>
                     <span style="color: rgb(33, 33, 33); display: inline;">{{signature.position}}</span>
                     <span style="display: inline;"><br></span>
@@ -181,17 +181,10 @@
                     <span style="display: inline;">Phone: </span>
                     <a href="tel:{{signature.phone}}" style="text-decoration: none; display: inline;" [ngStyle]="{ color: config.color }">{{signature.phone}}</a>
                   </p>
-                  <p style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px; margin-bottom: 10px;">
+                  <p style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 10px; line-height: 12px; margin-bottom: 0px;">
                     <a href="{{ config.companyWebsite }}/?signature={{signature.email}}" target="_blank" style="font-weight: bold; font-size: 12px; color: rgb(33, 33, 33); text-decoration: underline; display: inline;">{{ config.companyName }}</a>
                     <span style="display: inline;"><br></span>
                     <span></span> <span style="color: rgb(33, 33, 33); display: inline;">{{ config.address }}</span>
-                    <span style="display: block;"></span>
-                    <!--<span style="color: rgb(33, 33, 33); display: inline;">-->
-                      <!--<a style="text-decoration: none; display: inline;" [ngStyle]="{ color: config.color }" href="{{ config.companyWebsite }}?signature={{signature.email}}" target="_blank">-->
-                        <!--{{ config.companyWebsite }}-->
-                      <!--</a>-->
-                    <!--</span>-->
-                    <span style="display: inline;"><br></span>
                   </p>
                 </div>
               </td>
