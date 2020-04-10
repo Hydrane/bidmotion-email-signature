@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50dd135c-7e61-4ec0-b775-4c4163eafe0c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/inline.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/inline.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/polyfills.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/polyfills.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/styles.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/styles.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/vendor.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/vendor.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="50dd135c-7e61-4ec0-b775-4c4163eafe0c" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +82,7 @@
       <workItem from="1583486118144" duration="2538000" />
       <workItem from="1583508461910" duration="895000" />
       <workItem from="1583935057153" duration="870000" />
-      <workItem from="1584719908534" duration="1994000" />
+      <workItem from="1584719908534" duration="4145000" />
     </task>
     <servers />
   </component>
@@ -124,9 +107,10 @@
       <screen x="0" y="23" width="1440" height="873" />
     </state>
     <state x="385" y="216" width="670" height="486" key="find.popup/0.23.1440.873@0.23.1440.873" timestamp="1584976550275" />
-    <state x="305" y="120" width="670" height="676" key="search.everywhere.popup" timestamp="1583488998841">
-      <screen x="0" y="23" width="1280" height="773" />
+    <state x="343" y="133" width="754" height="764" key="search.everywhere.popup" timestamp="1584977274770">
+      <screen x="0" y="23" width="1440" height="873" />
     </state>
     <state x="305" y="120" width="670" height="676" key="search.everywhere.popup/0.23.1280.773@0.23.1280.773" timestamp="1583488998841" />
+    <state x="343" y="133" width="754" height="764" key="search.everywhere.popup/0.23.1440.873@0.23.1440.873" timestamp="1584977274770" />
   </component>
 </project>
