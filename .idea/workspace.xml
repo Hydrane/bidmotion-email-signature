@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50dd135c-7e61-4ec0-b775-4c4163eafe0c" name="Default" comment="" />
+    <list default="true" id="50dd135c-7e61-4ec0-b775-4c4163eafe0c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/inline.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/inline.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/polyfills.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/polyfills.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/styles.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/styles.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vendor.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +97,7 @@
       <workItem from="1583508461910" duration="895000" />
       <workItem from="1583935057153" duration="870000" />
       <workItem from="1584719908534" duration="4145000" />
+      <workItem from="1586538478407" duration="71000" />
     </task>
     <servers />
   </component>
